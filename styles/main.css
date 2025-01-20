@@ -1,0 +1,250 @@
+@import url('./base.css');
+
+.header__container {
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    background-color: rgb(54, 54, 54);
+    
+}
+
+
+.slider__container {
+    background-color: rgb(54, 54, 54);
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo {
+    background-color: rgb(240, 208, 28);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.logo__right {
+    color: black;
+}
+
+.rating__star {
+    width: 30px;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: rgb(122, 122, 122);
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.input {
+    width: 200px;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background-color: azure;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    color: black;
+}
+.link {
+    text-decoration: underline;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.slider__item {
+    display: flex;
+    overflow: hidden;
+}
+.slider__img {
+    display: block;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.slider__content {
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rating {
+    margin-bottom: 1rem;
+}
+.slider__actions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.auth__form {
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54);
+    padding: 2rem;
+    padding-left: 3rem;
+
+    display: grid;
+    gap: 0.5rem;
+    column-gap: 1rem;
+    grid-template-columns: 60% 200px;
+    grid-template-rows: auto auto;
+    
+}
+.auth__button {
+    height: 50px;
+    width: 200px;
+}
+.auth__input {
+    height: 50px;
+    font-size: 1.5rem;
+    grid-column: 1/2;
+}
+.auth__link {
+    grid-row: 1/2;
+    align-self: end;
+}
+.auth__action {
+    grid-column: 2/3;
+    text-decoration: none;
+}
+.auth__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.about__container {
+    padding: 1rem;
+}
+.about__img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.about__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+
+.about__img {
+    border-radius: 5px;
+}
+.about__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+video {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+}
+.competitions__container {
+    padding: 1rem;
+}
+.card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.card__img {
+    display: block;
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+.card__rating {
+    margin-bottom: 0;
+}
+.card__rating .rating__star {
+    width: 20px;
+}
+.card__name-rating {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card__button {
+    height: 40px;
+}
+.search__form {
+    display: flex;
+}
+.search__input {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+.search__button {
+    border-radius: 0 5px 5px 0;
+}
+.feedback__img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-grow: 0;
+}
+.feedback {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(122, 122, 122);
+    width: max-content;
+    border-radius: 5px;
+    flex-grow: 0;
+    
+}
+.feedback__name {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+.feedbacks {
+    overflow-x: auto;
+    gap: 50px;
+    display: flex;
+    padding: 1rem;
+}
+.feedbacks::-webkit-scrollbar {
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+.feedbacks::-webkit-scrollbar-thumb {
+    height: 25px;
+    background-color: rgb(122, 122, 122);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.feedback__text {
+    width: 300px;
+}
+.feedback__text {
+    display: block;
+}
+.feedback__action {
+    display: block;
+}
