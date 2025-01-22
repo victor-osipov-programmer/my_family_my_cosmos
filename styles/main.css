@@ -41,8 +41,16 @@ body {
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: var(--color-shadow);
-    margin-bottom: 3rem;
     background: var(--color-bg-primary);
+}
+header {
+    padding-bottom: 1.5rem;
+}
+section {
+    padding-block: 1.5rem;
+}
+footer {
+    padding-top: 1.5rem;
 }
 
 a {
