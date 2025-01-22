@@ -1,9 +1,6 @@
 :root {
     --color-bg-primary: linear-gradient( rgb(101, 162, 223), rgb(53, 112, 184));
     --color-bg-secondary: rgb(255, 255, 255);
-    --color-text-primary: rgb(0, 0, 0);
-    --color-text-secondary: black;
-    
 
     --color-text-accent: rgb(240, 208, 28);
     --color-shadow: 0 5px 1rem 1px rgba(0, 0, 0, 0.2);
