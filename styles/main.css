@@ -106,7 +106,7 @@ a {
     background-color: var(--color-white);
     font-size: 1.2rem;
     border-radius: 5px;
-    color: var(--color-text-secondary);
+    color: black;
 }
 .link {
     text-decoration: underline;
