@@ -31,37 +31,57 @@
     <section class="register">
         <div class="container">
             <form class="register__form" action="#">
-                <div class="grid">
-                    <input placeholder="Имя" type="text" class="input">
-                    <input placeholder="Фамилия" type="text" class="input">
-                    <input placeholder="Возраст" type="number" class="input">
-                    <select class="input register__pol">
-                        <option disabled selected>Пол</option>
-                        <option value="мужской">мужской</option>
-                        <option value="женский">женский</option>
-                    </select>
+                <div class="register__content">
+                    <div class="form">
+                        <input required placeholder="Имя" type="text" class="input">
+                        <input required placeholder="Фамилия" type="text" class="input">
+                        <input required placeholder="Возраст" type="number" class="input">
+                        <select required class="input register__pol">
+                            <option disabled selected value="">Пол</option>
+                            <option value="мужской">мужской</option>
+                            <option value="женский">женский</option>
+                        </select>
 
-                    <label class="file-input input register__file-input">
-                        <input onchange="upload(event)" class="file-input__input" placeholder="file" type="file" multiple>
-                        Загрузить изображение
-                        <div class="file-input__img"></div>
-                        <div class="file-input__names" id="files_names"></div>
-                    </label>
+                        <label class="file-input input register__file-input">
+                            <input required onchange="upload(event)" class="file-input__input" placeholder="file" type="file" multiple>
+                            Загрузить изображение
+                            <div class="file-input__img"></div>
+                            <div class="file-input__names" id="files_names"></div>
+                        </label>
+                    </div>
 
-                    <input placeholder="Email" type="email" class="input register__email">
-                    <input placeholder="Пароль" type="password" class="input register__password">
-                    <input placeholder="Повтор пароля" type="password" class="input register__repassword">
+                    <div class="form">
+                        <input required placeholder="Email" type="email" class="input register__email">
+                        <input required placeholder="Пароль" type="password" class="input register__password">
+                        <input required placeholder="Повтор пароля" type="password" class="input register__repassword">
 
-                    <label class="register__checkbox">
-                        <input type="checkbox">
-                        <span>Согласие на обработку <br> персональных данных</span>
-                    </label>
-                    <button class="button register__button">Регистрация</button>
+                        <label class="register__checkbox">
+                            <input required type="checkbox">
+                            <span>Согласие на обработку <br> персональных данных</span>
+                        </label>
+                        <button class="button register__button">Регистрация</button>
+                    </div>
+
+                    <div class="form register__family register-family">
+                        <h1 class="register-family__title">Семья</h1>
+                        <button type="button" class="button">Добавить</button>
+                    </div>
+
+                    <div class="form">
+                        <button type="button" class="register__delete">Удалить</button>
+                        <input required placeholder="Имя" type="text" class="input">
+                        <input required placeholder="Фамилия" type="text" class="input">
+                        <input required placeholder="Возраст" type="number" class="input">
+                        <select required class="input register__pol">
+                            <option disabled selected value="">Пол</option>
+                            <option value="мужской">мужской</option>
+                            <option value="женский">женский</option>
+                        </select>
+                    </div>
                 </div>
+                
 
-                <div>
-                    <img class="register__img" src="img/kosmos.avif" alt="">
-                </div>
+                <img class="register__img" src="img/kosmos.avif" alt="">
             </form>
         </div>
     </section>
@@ -83,6 +103,7 @@
                 <a href="tel:+7 (4842) 23-45-67">+7 (4842) 23-45-67</a>
                 <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
             </div>
+            <div></div>
         </div>
     </footer>
 
@@ -97,11 +118,7 @@
                 return el;
             })
             
-
-            files_names.innerHTML = ''
-            files.forEach(element => {
-                files_names.appendChild(element)
-            })
+            files_names.append(...files)
         }
     </script>
 </body>
